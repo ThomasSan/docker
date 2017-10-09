@@ -1,0 +1,1 @@
+docker rmi $(docker image ls | awk '{if (NR != 1) print $3}')

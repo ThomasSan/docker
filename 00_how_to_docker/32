@@ -1,0 +1,1 @@
+docker rm -f $(docker container ps -a | awk '{if (NR != 1) print $1}')
